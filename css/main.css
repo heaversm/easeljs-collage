@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+    margin: 0;
+}
+
+button {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    background-color: #fcfcfc;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.collage-canvas {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+}
+
+.control {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.row.control:last-child {
+    margin-right: 0px;
+}
+
+.save {
+    height: 50px;
+    width: 150px;
+}
+
+.image-container {
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}

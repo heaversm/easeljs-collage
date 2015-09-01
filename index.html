@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Collage Prototype</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Collage</h1>
+    <section class="canvas-container">
+        <canvas id="collageCanvas" class="collage-canvas" width="800" height="600"></canvas>
+    </section>
+
+    <section class="items-container">
+        <h3>Add Items</h3>
+        <div class="row">
+            <p>Environment</p>
+            <div class="control">
+                <p>background:</p>
+                <button class="environment" data-url="sky.jpg" data-type="background">SKY</button>
+                <button class="environment" data-url="space.jpg" data-type="background">SPACE</button>
+            </div>
+            <div class="control">
+                <p>foreground</p>
+                <button class="environment" data-url="grass.jpg" data-type="foreground">GRASS</button>
+                <button class="environment" data-url="snow.jpg" data-type="foreground">SNOW</button>
+                <button class="environment" data-url="" data-type="background">NONE</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <p>Organisms</p>
+            <button class="item" data-url="coyote.png">COYOTE</button>
+            <button class="item" data-url="dragonfly.png">DRAGONFLY</button>
+        </div>
+
+    </section>
+    <section class="controls-container">
+        <h3>Manipulate Selected Item</h3>
+        <div class="row">
+            <div class="control">
+                SCALE: <input type="range" class="scale" min="0" value="1" max="1" step=".01">
+            </div>
+            <div class="control">
+                BLUR: <input type="range" class="blur" min="0" value="0" max="10" step="1">
+            </div>
+            <div class="control">
+                ROTATE: <input type="range" class="rotate" min="0" value="0" max="360" step="1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="control">
+                <button class="front">BRING TO FRONT</button>
+                <button class="remove">REMOVE</button>
+            </div>
+        </div>
+    </section>
+    <section class="save-container">
+        <button class="save">SAVE IMAGE</button>
+        <div class="image-container"></div>
+    </section>
+</div>
+
+
+
+<script src="js/lib/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="js/lib/easeljs-0.8.1.min.js" type="text/javascript"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
